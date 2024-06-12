@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  mariadb:
+    container_name: mariadb-server
+    image: mariadb:10.11
+    ports:
+      - "3306:3306"
+    environment:
+        MARIADB_ROOT_PASSWORD: root
+        MARIADB_DATABASE: contacts
+        MARIADB_USER: root
+        MARIADB_PASSWORD: test
